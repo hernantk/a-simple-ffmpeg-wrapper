@@ -1,0 +1,31 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#818cf8"/>
+      <stop offset="1" stop-color="#4f46e5"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background (full square — o OS aplica os cantos arredondados por plataforma) -->
+  <rect width="512" height="512" fill="url(#grad)"/>
+
+  <!-- Seta superior → direita (entrada) -->
+  <path
+    d="M96 190 H370 M320 140 L370 190 L320 240"
+    stroke="white"
+    stroke-width="36"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    fill="none"
+  />
+
+  <!-- Seta inferior ← esquerda (saída) -->
+  <path
+    d="M416 322 H142 M192 272 L142 322 L192 372"
+    stroke="rgba(255,255,255,0.55)"
+    stroke-width="36"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    fill="none"
+  />
+</svg>

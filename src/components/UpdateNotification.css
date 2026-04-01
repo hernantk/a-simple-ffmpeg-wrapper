@@ -1,0 +1,109 @@
+.update-notification {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 16px 20px;
+  border-radius: 8px;
+  background: #2d3748;
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  z-index: 1000;
+  max-width: 400px;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.update-notification.checking {
+  background: #4a5568;
+}
+
+.update-notification.error {
+  background: #c53030;
+}
+
+.update-notification.downloading {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.update-notification.available {
+  background: #2b6cb0;
+}
+
+.update-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.update-version {
+  font-weight: 600;
+}
+
+.update-changelog {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.8);
+  max-height: 60px;
+  overflow-y: auto;
+}
+
+.update-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background: #48bb78;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.update-btn:hover:not(:disabled) {
+  background: #38a169;
+}
+
+.update-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.progress-bar {
+  height: 4px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+  overflow: hidden;
+  margin-top: 8px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #48bb78;
+  transition: width 0.3s ease;
+}
+
+.update-notification.error button {
+  padding: 4px 12px;
+  border: none;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  cursor: pointer;
+}
+
+.update-notification.error button:hover {
+  background: rgba(255, 255, 255, 0.3);
+}

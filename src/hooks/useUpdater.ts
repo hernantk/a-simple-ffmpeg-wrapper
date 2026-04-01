@@ -106,7 +106,11 @@ export function useUpdater() {
   }, []);
 
   useEffect(() => {
-    checkForUpdates();
+    // Only check for updates in production builds
+    // The updater doesn't work properly in development mode
+    if (import.meta.env.PROD) {
+      checkForUpdates();
+    }
   }, [checkForUpdates]);
 
   return {

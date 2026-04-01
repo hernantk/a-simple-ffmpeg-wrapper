@@ -43,7 +43,7 @@
   "plugins": {
     "updater": {
       "endpoints": [
-        "https://github.com/hernantk/a-simple-ffmpeg-wrapper/releases/latest"
+        "https://github.com/hernantk/a-simple-ffmpeg-wrapper/releases/latest/download/latest.json"
       ],
       "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IEJBN0FDMUNGOUM0RDUzNkIKUldSclUwMmN6OEY2dWlwRDhUS3A2cVM5NFFUWTQwY0Mya216QWFrNkdXTW9nWGxXYTlLbjJ6OWcK"
     }

@@ -1,6 +1,6 @@
 [package]
 name = "a-simple-ffmpeg-wrapper"
-version = "0.1.0"
+version = "1.0.0"
 description = "A Simple FFmpeg Wrapper - Desktop video/audio/image converter"
 authors = ["you"]
 edition = "2021"
